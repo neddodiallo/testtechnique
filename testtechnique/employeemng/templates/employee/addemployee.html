@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'employee/style.css' %}">
+<form method="POST" enctype="multipart/form-data">
+    <table>
+        {% csrf_token %}
+        {{ form}}
+    </table>
+    <input id="add" type="submit" value="Submit">
+</form>

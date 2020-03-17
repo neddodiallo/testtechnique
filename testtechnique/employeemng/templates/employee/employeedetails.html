@@ -1,0 +1,10 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'employee/style.css' %}">
+<div id="container">
+    <div id="profile">
+        <img src="/uploads/{{ employee.avatar }}" />
+    </div>
+    <h5>{{ employee.first_name }} {{ employee.last_name }}</h5>
+    <h5>{{ employee.birthday }}</h5>
+    <h5>{{ employee.function }}</h5>
+</div>
