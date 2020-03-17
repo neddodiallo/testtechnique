@@ -19,9 +19,6 @@ class Employee(models.Model):
         """
         return f"{self.first_name}  {self.last_name}"
 
-    def is_date_superior_to_eighteen(self):
-        return self.birthday >= datetime.date.today() - datetime.timedelta(days=18)
-
 
 class EmployeeForm(ModelForm):
     class Meta:
